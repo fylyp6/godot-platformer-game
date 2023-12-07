@@ -4,3 +4,12 @@
 
 [node name="Level" type="Node"]
 script = ExtResource("1_or5ga")
+
+[node name="Tiles" type="TileMap" parent="."]
+format = 2
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Backgrounds" type="ParallaxBackground" parent="."]
+
+[node name="Entities" type="Node2D" parent="."]
