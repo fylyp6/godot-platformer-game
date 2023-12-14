@@ -1,7 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://db345pb10u7xc"]
+[gd_scene load_steps=5 format=3 uid="uid://db345pb10u7xc"]
 
 [ext_resource type="PackedScene" uid="uid://dr6jox0btwbw1" path="res://objects/entities/entity.tscn" id="1_86l1m"]
 [ext_resource type="Script" path="res://objects/entities/player/player.gd" id="2_xiela"]
+[ext_resource type="Texture2D" uid="uid://dwb37h440py0j" path="res://assets/Player.png" id="3_jfxsp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7htnb"]
+size = Vector2(10, 12)
 
 [node name="Player" instance=ExtResource("1_86l1m")]
 script = ExtResource("2_xiela")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_jfxsp")
+hframes = 4
+vframes = 6
+
+[node name="CollisionBox" type="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_7htnb")

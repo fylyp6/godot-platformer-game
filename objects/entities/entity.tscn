@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://dr6jox0btwbw1"]
+[gd_scene load_steps=2 format=3 uid="uid://dr6jox0btwbw1"]
+
+[ext_resource type="Script" path="res://objects/entities/entity.gd" id="1_48ewm"]
 
 [node name="Entity" type="CharacterBody2D"]
+script = ExtResource("1_48ewm")
